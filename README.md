@@ -4,6 +4,17 @@
 **Version**: 2.0 Production  
 **Last Updated**: June 29, 2025  
 
+## Project Structure
+
+This repository has been organized for maintainability and clarity:
+
+- **`src/`** - All TypeScript source code, HTML templates, and configuration files
+- **`python/`** - Python scripts and pyproject.toml for PDF generation and utilities
+- **`data/`** - Data files, images, JSON files, and analysis outputs
+- **`docs/`** - All documentation (PDFs and Markdown files)
+- **`static/`** - Static web assets and standalone HTML files
+- **`scripts/`** - Shell scripts for automation and deployment
+
 ## Documentation Overview
 
 This comprehensive documentation covers all aspects of the Stormwater AI system, from high-level architecture to specific bug tracking and development planning.
@@ -11,21 +22,21 @@ This comprehensive documentation covers all aspects of the Stormwater AI system,
 ## Quick Links
 
 ### 🏗️ Architecture & Technical
-- **[Complete System Architecture](./system-architecture-complete.md)** - Full technical architecture specification
-- **[AI Technical Implementation](./ai-technical-implementation.md)** - AI service implementation details
+- **[Complete System Architecture](./docs/system-architecture-complete.md)** - Full technical architecture specification
+- **[AI Technical Implementation](./docs/ai-technical-implementation.md)** - AI service implementation details
 
 ### 🤖 AI System Documentation
-- **[AI System Overview](./ai-system-overview.md)** - AI capabilities and features
-- **[AI Performance Report](./ai-performance-report.md)** - Performance metrics and analysis
+- **[AI System Overview](./docs/ai-system-overview.md)** - AI capabilities and features
+- **[AI Performance Report](./docs/ai-performance-report.md)** - Performance metrics and analysis
 
 ### 🐛 Development & Issues
-- **[Current Status and Issues](./current-status-and-issues.md)** - Known issues and workarounds
-- **[Bug Tracking Log](./bug-tracking-log.md)** - Detailed bug tracking and resolution
-- **[Development Roadmap](./development-roadmap.md)** - Future development plans
+- **[Current Status and Issues](./docs/current-status-and-issues.md)** - Known issues and workarounds
+- **[Bug Tracking Log](./docs/bug-tracking-log.md)** - Detailed bug tracking and resolution
+- **[Development Roadmap](./docs/development-roadmap.md)** - Future development plans
 
 ### 📊 Analysis Reports
-- **[Analysis Reports Directory](./analysis-reports/)** - System analysis and technical reports
-- **[User Guides Directory](./user-guides/)** - End-user documentation
+- **[Analysis Reports Directory](./data/)** - System analysis and technical reports
+- **[User Guides Directory](./docs/)** - End-user documentation
 
 ## System Status Summary
 

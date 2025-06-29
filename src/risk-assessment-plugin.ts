@@ -3,7 +3,7 @@
  * Specialized plugin for stormwater risk analysis and mitigation planning
  */
 
-import type { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from '../plugin-manager';
+import type { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from './plugin-manager';
 
 export class RiskAssessmentPlugin implements AIPlugin {
   id = 'risk-assessment';

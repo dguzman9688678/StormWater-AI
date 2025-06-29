@@ -1,6 +1,6 @@
 import { AIAnalyzer } from './ai-analyzer';
-import { storage } from '../storage';
-import { Document, Recommendation, AiAnalysis } from '../../shared/schema';
+import { storage } from './storage';
+import { Document, Recommendation, AiAnalysis } from './schema';
 
 export interface DocumentGenerationRequest {
   title: string;

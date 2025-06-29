@@ -1,5 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk';
-import type { Document } from "@shared/schema";
+import type { Document } from "./schema";
 
 export interface AnalysisResult {
   analysis: string;
@@ -36,7 +36,7 @@ export class AIAnalyzer {
 
     try {
       // Get all documents from storage to use as reference context
-      const { storage } = await import('../storage');
+      const { storage } = await import('./storage');
       const allDocuments = await storage.getAllDocuments();
       
       const isImage = /\.(jpg|jpeg|png|gif|bmp|webp|heic|heif)$/i.test(document.originalName);

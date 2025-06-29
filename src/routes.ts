@@ -3,19 +3,19 @@ import { createServer, type Server } from "http";
 import multer from "multer";
 import path from "path";
 import { storage } from "./storage";
-import { DocumentProcessor } from "./services/document-processor";
-import { AIAnalyzer } from "./services/ai-analyzer";
-import { RecommendationGenerator } from "./services/recommendation-generator";
-import { DocumentExporter } from "./services/document-exporter";
-import { DocumentGenerator } from "./services/document-generator";
-import { ChatService } from "./services/chat-service";
-import { WebSearchService } from "./services/web-search-service";
-import { PythonInterpreter } from "./services/python-interpreter";
+import { DocumentProcessor } from "./document-processor";
+import { AIAnalyzer } from "./ai-analyzer";
+import { RecommendationGenerator } from "./recommendation-generator";
+import { DocumentExporter } from "./document-exporter";
+import { DocumentGenerator } from "./document-generator";
+import { ChatService } from "./chat-service";
+import { WebSearchService } from "./web-search-service";
+import { PythonInterpreter } from "./python-interpreter";
 import archiver from "archiver";
-import { pluginRegistry } from "./plugin-system/plugin-registry";
-import { pluginManager } from "./plugin-system/plugin-manager";
+import { pluginRegistry } from "./plugin-registry";
+import { pluginManager } from "./plugin-manager";
 
-import { insertDocumentSchema, insertAiAnalysisSchema } from "@shared/schema";
+import { insertDocumentSchema, insertAiAnalysisSchema } from "./schema";
 
 const upload = multer({ 
   dest: 'uploads/',
@@ -1804,7 +1804,7 @@ ${docType === 'sop' ? 'Standard Operating Procedure: Include step-by-step proced
     }
   });
 
-  app.get("/api/plugins/:pluginId/status", async (req, res) => {
+  app.get("/ap./:pluginId/status", async (req, res) => {
     try {
       const { pluginId } = req.params;
       const status = pluginManager.getPluginStatus(pluginId);
@@ -1820,7 +1820,7 @@ ${docType === 'sop' ? 'Standard Operating Procedure: Include step-by-step proced
     }
   });
 
-  app.post("/api/plugins/process", async (req, res) => {
+  app.post("/ap./process", async (req, res) => {
     try {
       const { type, data, priority = 'normal', timeout = 30000 } = req.body;
       
@@ -1845,7 +1845,7 @@ ${docType === 'sop' ? 'Standard Operating Procedure: Include step-by-step proced
     }
   });
 
-  app.get("/api/plugins/resources", async (req, res) => {
+  app.get("/ap./resources", async (req, res) => {
     try {
       const resources = pluginManager.getSystemResources();
       res.json(resources);
@@ -1856,7 +1856,7 @@ ${docType === 'sop' ? 'Standard Operating Procedure: Include step-by-step proced
   });
 
   // Plugin toggle endpoints
-  app.post("/api/plugins/:pluginId/activate", async (req, res) => {
+  app.post("/ap./:pluginId/activate", async (req, res) => {
     try {
       const { pluginId } = req.params;
       const result = await pluginRegistry.activatePlugin(pluginId);
@@ -1867,7 +1867,7 @@ ${docType === 'sop' ? 'Standard Operating Procedure: Include step-by-step proced
     }
   });
 
-  app.post("/api/plugins/:pluginId/deactivate", async (req, res) => {
+  app.post("/ap./:pluginId/deactivate", async (req, res) => {
     try {
       const { pluginId } = req.params;
       const result = await pluginRegistry.deactivatePlugin(pluginId);

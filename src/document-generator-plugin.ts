@@ -3,7 +3,7 @@
  * Handles professional document generation (SOPs, JSAs, permits, etc.)
  */
 
-import { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from '../plugin-manager';
+import { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from './plugin-manager';
 
 export class DocumentGeneratorPlugin implements AIPlugin {
   id = 'document-generator';

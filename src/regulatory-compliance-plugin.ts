@@ -3,7 +3,7 @@
  * Specialized plugin for regulatory compliance analysis and guidance
  */
 
-import type { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from '../plugin-manager';
+import type { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from './plugin-manager';
 
 export class RegulatoryCompliancePlugin implements AIPlugin {
   id = 'regulatory-compliance';

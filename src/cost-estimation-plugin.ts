@@ -3,7 +3,7 @@
  * Specialized plugin for stormwater project cost analysis and estimation
  */
 
-import type { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from '../plugin-manager';
+import type { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from './plugin-manager';
 
 export class CostEstimationPlugin implements AIPlugin {
   id = 'cost-estimation';

@@ -3,7 +3,7 @@
  * Specialized plugin for stormwater site planning and design optimization
  */
 
-import type { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from '../plugin-manager';
+import type { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from './plugin-manager';
 
 export class SitePlanningPlugin implements AIPlugin {
   id = 'site-planning';

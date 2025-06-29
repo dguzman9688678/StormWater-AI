@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import archiver from 'archiver';
 import * as XLSX from 'xlsx';
-import { Document, Recommendation, AiAnalysis } from '../../shared/schema';
+import { Document, Recommendation, AiAnalysis } from './schema';
 
 export interface ExportOptions {
   format: 'pdf' | 'docx' | 'txt' | 'csv' | 'xlsx' | 'json' | 'zip';

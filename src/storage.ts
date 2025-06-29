@@ -11,7 +11,7 @@ import {
   type InsertAiAnalysis,
   type AdminSession,
   type InsertAdminSession
-} from "@shared/schema";
+} from "./schema";
 import { db } from "./db";
 import { eq, like, or, desc, asc } from "drizzle-orm";
 

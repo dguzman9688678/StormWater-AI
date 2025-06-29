@@ -3,7 +3,7 @@
  * Specialized plugin for stormwater training programs and certification management
  */
 
-import type { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from '../plugin-manager';
+import type { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from './plugin-manager';
 
 export class TrainingCertificationPlugin implements AIPlugin {
   id = 'training-certification';

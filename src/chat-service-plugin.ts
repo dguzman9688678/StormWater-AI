@@ -3,8 +3,8 @@
  * Converts existing Chat Service into a plugin for the ecosystem
  */
 
-import { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from '../plugin-manager';
-import { ChatService } from '../../services/chat-service';
+import { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from './plugin-manager';
+import { ChatService } from './chat-service';
 
 export class ChatServicePlugin implements AIPlugin {
   id = 'chat-service';

@@ -3,9 +3,9 @@
  * Converts existing AI Analyzer service into a plugin for the ecosystem
  */
 
-import { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from '../plugin-manager';
-import { AIAnalyzer } from '../../services/ai-analyzer';
-import type { Document } from '../../../shared/schema';
+import { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from './plugin-manager';
+import { AIAnalyzer } from './ai-analyzer';
+import type { Document } from './schema';
 
 export class StormwaterAnalysisPlugin implements AIPlugin {
   id = 'stormwater-analysis';

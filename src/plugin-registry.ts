@@ -4,15 +4,15 @@
  */
 
 import { pluginManager } from './plugin-manager';
-import { StormwaterAnalysisPlugin } from './plugins/stormwater-analysis-plugin';
-import { ChatServicePlugin } from './plugins/chat-service-plugin';
-import { DocumentGeneratorPlugin } from './plugins/document-generator-plugin';
-import { RegulatoryCompliancePlugin } from './plugins/regulatory-compliance-plugin';
-import { CostEstimationPlugin } from './plugins/cost-estimation-plugin';
-import { SitePlanningPlugin } from './plugins/site-planning-plugin';
-import { RiskAssessmentPlugin } from './plugins/risk-assessment-plugin';
-import { TrainingCertificationPlugin } from './plugins/training-certification-plugin';
-import { EnvironmentalMonitoringPlugin } from './plugins/environmental-monitoring-plugin';
+import { StormwaterAnalysisPlugin } from './stormwater-analysis-plugin';
+import { ChatServicePlugin } from './chat-service-plugin';
+import { DocumentGeneratorPlugin } from './document-generator-plugin';
+import { RegulatoryCompliancePlugin } from './regulatory-compliance-plugin';
+import { CostEstimationPlugin } from './cost-estimation-plugin';
+import { SitePlanningPlugin } from './site-planning-plugin';
+import { RiskAssessmentPlugin } from './risk-assessment-plugin';
+import { TrainingCertificationPlugin } from './training-certification-plugin';
+import { EnvironmentalMonitoringPlugin } from './environmental-monitoring-plugin';
 
 export class PluginRegistry {
   private static instance: PluginRegistry;

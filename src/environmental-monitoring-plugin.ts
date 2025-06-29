@@ -3,7 +3,7 @@
  * Specialized plugin for environmental monitoring and data analysis
  */
 
-import type { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from '../plugin-manager';
+import type { AIPlugin, PluginStatus, ResourceUsage, PluginRequest } from './plugin-manager';
 
 export class EnvironmentalMonitoringPlugin implements AIPlugin {
   id = 'environmental-monitoring';

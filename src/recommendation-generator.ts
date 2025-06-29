@@ -1,5 +1,5 @@
-import { storage } from "../storage";
-import { type InsertRecommendation } from "@shared/schema";
+import { storage } from "./storage";
+import { type InsertRecommendation } from "./schema";
 import { type AnalysisResult } from "./ai-analyzer";
 
 export class RecommendationGenerator {
