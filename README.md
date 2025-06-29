@@ -16,7 +16,7 @@ Email: guzman.danield@outlook.com
 
 ---
 
-##  StormWater AI Platform
+##  Stormwater AI Platform
 
 **Stormwater-AI** is a professional-grade AI platform for stormwater management analysis, designed to assist engineers, consultants, contractors, and regulatory agencies with fast, accurate, and high-quality environmental insights.
 
