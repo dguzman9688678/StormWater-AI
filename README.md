@@ -6,6 +6,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Powered by Claude 4](https://img.shields.io/badge/Powered_by-Claude_4-orange?style=for-the-badge)](https://anthropic.com)
 
+## Creator and Lead Developer 
+
+**Daniel Guzman**  
+
+ Location:Southern California  
+Email: guzman.danield@outlook.com
+
+
 ---
 
 ##  Revolutionary Engineering AI Platform
