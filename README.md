@@ -90,7 +90,7 @@ MIT License — See `LICENSE`
 
 
 
-# Stormwater-AI 🌊⚡  
+# Stormwater-AI 
 > **Professional AI-Powered Stormwater Management Analysis Platform**
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-stormwater--ai.replit.app-blue?style=for-the-badge)](https://stormwater-ai.replit.app)
